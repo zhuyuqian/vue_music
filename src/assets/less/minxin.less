@@ -1,0 +1,32 @@
+@import "color";
+
+.mixins-header-warp (@bgColor:none) {
+  top: -100px;
+  background: @bgColor;
+  transition: 0.5s top;
+  .van-nav-bar__left {
+    .van-icon {
+      color: @cl-title;
+      font-size: 20px;
+      font-weight: 800;
+    }
+    .van-nav-bar__text {
+      color: @cl-title;
+    }
+  }
+  .van-nav-bar__title {
+    color: @cl-title;
+  }
+  .van-nav-bar__right {
+    .van-icon {
+      font-size:20px;
+      color: @cl-title;
+    }
+  }
+  &::after {
+    border: none;
+  }
+  &.success {
+    top: 0;
+  }
+}
