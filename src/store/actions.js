@@ -1,13 +1,3 @@
-import {shuffle} from '../assets/js/util';
-import {playMode} from "../assets/js/config";
-
-// 查找歌曲在列表中的下标
-function findSongIndex(list, song) {
-    return list.findIndex((item) => {
-        return item.mid === song.mid
-    })
-}
-
 // 选中播放
 export const selectPlay = function ({commit, state}, {list, index}) {
     // 修改排序后的播放列表

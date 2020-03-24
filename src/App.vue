@@ -25,9 +25,9 @@
 </template>
 
 <script>
-    import top from './components/index-top/top';
-    import search from './components/search-box/search';
-    import player from './components/player/player';
+    import top from '@/components/top';
+    import search from '@/components/search';
+    import player from '@/components/player';
 
     export default {
         components: {top, search, player},

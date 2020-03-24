@@ -1,16 +1,17 @@
 import Vue from 'vue'
-import App from './App.vue'
-import components from './components/index';
-import router from './router'
-import store from './store'
-import ajax from './assets/js/ajax';
+import App from '@/App.vue'
+import components from '@/components/overall/index';
+import router from '@/router'
+import store from '@/store'
+import ajax from '@/api';
 import Vant from 'vant';
 import {Lazyload} from 'vant';
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 
 import 'swiper/dist/css/swiper.css'
 import 'vant/lib/index.css';
-import './assets/less/common.less';
+import '@/assets/less/common.less';
+
 require('vue2-animate/dist/vue2-animate.min.css');
 
 var FastClick = require('fastclick'); // 解决移动端点击300m的问题

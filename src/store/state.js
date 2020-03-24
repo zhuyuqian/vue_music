@@ -1,5 +1,5 @@
 // 数据
-import {playMode} from "../assets/js/config";
+import {playMode} from "@/config/index";
 
 const state = {
     playIng: false, // 是否正在播放
